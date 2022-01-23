@@ -1,6 +1,7 @@
 package main
 
 import (
+	"basicuserapiaccount/src/data"
 	"basicuserapiaccount/src/routes"
 
 	"github.com/gofiber/fiber/v2"
@@ -8,7 +9,8 @@ import (
 )
 
 func main() {
-	// data.Connect()
+	data.Connect()
+	data.AutoMigrate()
 
 	app := fiber.New()
 
