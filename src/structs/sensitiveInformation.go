@@ -5,6 +5,7 @@ type SensitiveInformation struct {
 	CPF       string `json:"cpf"`
 	BirthDate string `json:"birth_date"`
 	Gender    string `json:"gender"`
+	IsAdmin   bool   `json:"-"`
 	Contact
 	Adress
 }
