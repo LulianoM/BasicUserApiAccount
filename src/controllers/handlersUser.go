@@ -35,10 +35,10 @@ func Register(c *fiber.Ctx) error {
 	return c.JSON(user)
 }
 
-func GetAllUser(c *fiber.Ctx) error {
+func GetUser(c *fiber.Ctx) error {
 	var user structs.User
 
-	data.DB.Where("id = ?", "2").First(&user)
+	data.DB.Where("id = ?", "1").First(&user)
 
 	return c.JSON(user)
 }
