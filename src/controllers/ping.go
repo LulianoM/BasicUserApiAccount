@@ -7,7 +7,7 @@ import (
 func Ping(c *fiber.Ctx) error {
 
 	return c.JSON(fiber.Map{
-		"message": "pong :)",
+		"message": "oi luci :)",
 	})
 
 }
